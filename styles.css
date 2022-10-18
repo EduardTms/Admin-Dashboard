@@ -5,6 +5,96 @@ body {
     grid-template-rows: 1fr 4fr;
 }
 
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 15px 24px;
+}
+
+.searchbar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.searchbar > .bar {
+    background-color: rgb(220, 220, 228,0.6);
+    width: 80%;
+    height: 60%;
+    border-radius: 1em;
+}
+
+.currentProfile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+}
+
+img {
+    height: 48px;
+    margin: 0 25px;
+}
+
+.currentProfile > p {
+    font-weight: 600;
+}
+
+.hiThereProfile {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hiThereProfile > img {
+    margin-top: 20px;
+    height: 84px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.small {
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.userEduard {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.btn {
+    border-radius: 1em;
+    border-style: none;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
+.btn:hover {
+    background-color: #0a73a3;
+}
+
+.main-content {
+    background-color: rgb(220, 220, 228,0.6);
+}
+
 .sidebar {
     height: 100vh;
     grid-row-start: 1;
@@ -12,22 +102,13 @@ body {
     background-color: #0ea5e9;
 }
 
-.header {
-    background-color: antiquewhite;
-}
-
-.main-content {
-    background-color: aquamarine;
-}
-
 .dashboard {
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin: 10px 24px;
     font-size: 24px;
     font-weight: 600;
     color: white;
-    margin-top: 10px;
 }
 
 .userUtilities, .userSettings {
@@ -45,5 +126,9 @@ body {
 
 .userUtilities > a > iconify-icon, .userSettings > a > iconify-icon {
     margin-right: 12px;
+}
+
+.userUtilities > a:hover, .userSettings > a:hover {
+    color: black;
 }
 
